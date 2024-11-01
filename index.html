@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hans Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/img/fevicon.png?" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main>
+      <header id="header">
+        
+        <nav>
+          <div class="container">
+            <div class="logo">
+              <img src="img/Screenshot_2024-11-01_122648-removebg-preview.png" alt="Logo" />
+            </div>
+        
+            <div class="links">
+              <ul>
+                <li>
+                  <a href="#header">Home</a>
+                </li>
+                <li>
+                  <a href="#services">Services</a>
+                </li>
+                <li>
+                  <a href="#portfolio">Portfolio</a>
+                </li>
+                <li>
+                  <a href="#about">Skills</a>
+                </li>
+                <li>
+                  <a href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+        
+            <div class="hamburger-menu" id="hamburger">
+              <div class="bar"></div>
+            </div>
+        
+            <script>
+              const hamburger = document.getElementById("hamburger");
+              const nav = document.querySelector("nav");
+        
+              hamburger.addEventListener("click", function() {
+                nav.classList.toggle("open");
+              });
+        
+              // Close the menu when a link is clicked
+              const links = document.querySelectorAll('.links a');
+              links.forEach(link => {
+                link.addEventListener('click', () => {
+                  nav.classList.remove('open'); // Close the menu
+                });
+              });
+            </script>
+          </div>
+        </nav>
+        
+
+        <!-- Main section  -->
+
+        <div class="header-content">
+          <div class="container grid-2">
+            <div class="column-1">
+              <h1 class="header-title">Hans Alfaras</h1>
+              <div class="text">
+                <p>Computer Science Student</p>
+                <div class="small-desc">
+                  Hello! I'm a computer science student with a passion for web development and a growing interest in full-stack development. My work focuses on creating responsive, user-friendly websites and exploring the basics of full-stack solutions to enhance functionality and user experience.
+                </div>
+              </div>
+              <a href="" target="" class="btn">Download CV</a>
+            </div>
+
+            <div class="column-2 image">
+              <img
+                src="./img/person-nigga.png"
+                class="img-element z-index"
+                alt="main logo"
+              />
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Skill section -->
+
+      <section class="about section" id="about">
+        <div class="container">
+          <div class="section-header">
+            <h3 class="title" data-title="What i'm capable">Skills</h3>
+          </div>
+
+          <div class="section-body grid-2">
+            <div class="column-1">
+              <h3 class="title-sm">Tech Stack</h3>
+              <p class="text">
+                I am proficient in a diverse range of technologies that enable me to create engaging and effective web applications. My skills include:
+              </p>
+              <div class="skills">
+                <div class="skill HTML">
+                  <h3 class="skill-title">HTML</h3>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-progress="80%"></div>
+                  </div>
+                </div>
+                <div class="skill CSS">
+                  <h3 class="skill-title">CSS</h3>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-progress="75%"></div>
+                  </div>
+                </div>
+                <div class="skill JavaScript">
+                  <h3 class="skill-title">JavaScript</h3>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-progress="60%"></div>
+                  </div>
+                </div>
+                <div class="skill Bootstrap">
+                  <h3 class="skill-title">Bootstrap</h3>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-progress="75%"></div>
+                  </div>
+                </div>
+                <div class="skill CPlusPlus">
+                  <h3 class="skill-title">C++</h3>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-progress="60%"></div>
+                  </div>
+                </div>
+                <div class="skill Java">
+                  <h3 class="skill-title">Java</h3>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-progress="55%"></div>
+                  </div>
+                </div>
+                <div class="skill Figma">
+                  <h3 class="skill-title">Figma</h3>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-progress="85%"></div>
+                  </div>
+                </div>
+                <div class="skill GitHub">
+                  <h3 class="skill-title">GitHub</h3>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-progress="80%"></div>
+                  </div>
+                </div>
+                <div class="skill VisualStudio">
+                  <h3 class="skill-title">Visual Studio</h3>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-progress="75%"></div>
+                  </div>
+                </div>
+                <div class="skill Photoshop">
+                  <h3 class="skill-title">Photoshop</h3>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-progress="65%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="column-2 image">
+              <img src="./img/Picsart_24-11-01_16-04-47-533.png" class="z-index" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services section  -->
+
+      <section class="services section" id="services">
+        <div class="container">
+          <div class="section-header">
+            <h3 class="title" data-title="What I Do">Services</h3>
+            <p class="text">
+              The services I offer as a freelance developer are designed to elevate your project or business.
+            </p>
+          </div>
+
+          <div class="cards">
+            
+            <div class="card-wrap">
+              <div class="card" data-card="WD">
+                <div class="card-content z-index">
+                  <img
+                    src="./img/services/app.png"
+                    class="icon"
+                    
+                  />
+                  <h3 class="title-sm">Web Development</h3>
+                  <p class="text">
+                    I specialize in creating responsive and engaging websites tailored to meet your needs. From front-end design to basic back-end integration, I ensure each project is visually appealing, user-friendly, and optimized for performance.
+                  </p>
+                 
+                </div>
+              </div>
+            </div>
+            <div class="card-wrap">
+              <div class="card" data-card="WAD">
+                <div class="card-content z-index">
+                  <img
+                    src="./img/services/web.png"
+                    class="icon"
+                    
+                  />
+                  <h3 class="title-sm">Web / App Design</h3>
+                  <p class="text">
+                    I offer intuitive and visually compelling web and app design services, creating layouts and interfaces that prioritize user experience. Using Figma, I craft wireframes, prototypes, and high-fidelity designs that reflect your brand and meet user expectations. 
+                  </p>
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="card-wrap">
+              
+              <div class="card" data-card="DB">
+                <div class="card-content z-index">
+                  <img
+                    src="./img/services/database.png"
+                    class="icon"
+                    
+                  />
+                  <h3 class="title-sm">Database/Backend</h3>
+                  <p class="text">
+                    I offer backend and database development services using Node.js and MySQL, From setting up RESTful APIs to managing data storage and retrieval, I build robust infrastructures that ensure smooth, reliable performance for both web and mobile platforms.
+                  </p>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio section -->
+<section class="portfolio section" id="portfolio">
+  <div class="background-bg">
+    
+  </div>
+
+  <div class="container">
+    <div class="section-header">
+      <h3 class="title" data-title="My works">Portfolio</h3>
+      <p class="text">
+        As a freelance developer, I offer a range of services tailored to enhance your projects and drive your business forward. 
+      </p>
+      
+    </div>
+
+    <div class="section-body">
+      <div class="grid">
+        
+          <div class="grid-item webdev">
+            <div class="gallery-image">
+              <img src="./img/portfolio/36157ffb-99ab-49c5-b8a0-a424251913b7.jpeg" alt="Appointment Management" />
+              <div class="img-overlay">
+                <div class="proj">
+                  <h3>Blink</h3>
+                  <h5>A Room Rental website </h5>
+                  <p>The Room Apartment website is a user-friendly platform designed to streamline the process of finding and renting rooms or apartments. Whether you're a student, young professional, or a family looking for a new home, this website offers a comprehensive solution to meet your housing needs.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="contact-box">
+      <div class="contact-info">
+        <h3 class="title">Get in touch</h3>
+        <p class="text">
+          Give me a call or drop a message anytime, we will have a chat.
+        </p>
+        <div class="information-wrap">
+          <div class="information">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <p class="info-text">Zambowood, Zamboanga City 7000</p>
+          </div>
+          <div class="information">
+            <div class="contact-icon">
+              <i class="fas fa-paper-plane"></i>
+            </div>
+            <p class="info-text">hansalfaras12@gmail.com</p>
+          </div>
+          <div class="information">
+            <div class="contact-icon">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <p class="info-text">+639270010666</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Map Embed -->
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5407.191960308192!2d122.13227255107238!3d6.940580269093096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x325043aa48193939%3A0xd5c73a078b356334!2sZambowood%20Rd%2C%20Zamboanga%2C%20Zamboanga%20del%20Sur!5e1!3m2!1sen!2sph!4v1730457852446!5m2!1sen!2sph"
+          width="100%"
+          height="450"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+      <!-- End of Map Embed -->
+
+    </div>
+  </div>
+</section>
+
+
+      <!-- Hire me -->
+
+      <section class="hireme" id="hireme">
+        <div class="container">
+          <h3 class="title">Getting Started: Let’s Connect!</h3>
+          <p class="text">
+            As a first step, I’d love to hear more about what you’re looking for. Understanding your needs helps me get a clearer picture of your goals and how I can assist you. This way, when we set up our initial consultation, we’ll be ready to dive into the details and really get into the conversation.
+          </p>
+          <a href="" class="btn">Hire me</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="bottom-footer">
+          <div class="copyright">
+            <p class="text">Copyright&copy;2024 All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/isotope.pkgd.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/app.js"></script>
+    <script>
+      document.querySelectorAll('.skill-progress').forEach(progress => {
+        const progressValue = progress.getAttribute('data-progress');
+        progress.style.width = progressValue; // Set the width dynamically
+      });
+      </script>
+    
+  </body>
+</html>
